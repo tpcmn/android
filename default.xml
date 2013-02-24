@@ -38,6 +38,11 @@
   <project path="device/google/accessory/demokit" name="CyanogenMod/android_device_google_accessory_demokit" groups="device" />
   <project path="device/mdpi-common" name="androidarmv6/android_device_mdpi-common" />
   <project path="device/ldpi-common" name="androidarmv6/android_device_ldpi-common" />
+  <project path="device/qcom/msm7x27" name="androidarmv6/android_device_qcom_msm7x27" />
+  <project path="device/samsung/gio" name="PAC-man/android_device_samsung_gio" />
+  <project path="device/lge/p500" name="PAC-man/android_device_lge_p500" />
+  <project path="device/samsung/msm7x27-common" name="PAC-man/android_device_samsung_msm7x27-common" />
+  <project path="device/lge/msm7x27-common" name="PAC-man/android_device_lge_msm7x27-common" />
   <project path="device/sample" name="CyanogenMod/android_device_sample" groups="device" />
   <project path="device/ti/panda" name="CyanogenMod/android_device_ti_panda" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
@@ -263,6 +268,8 @@
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
   <project path="libcore" name="CyanogenMod/android_libcore" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" />
+  <project path="kernel/samsung/msm7x27" name="androidarmv6/android_kernel_samsung_msm7x27" />
+  <project path="kernel/lge/msm7x27-3.0.x" name="androidarmv6/android_kernel_lge_msm7x27-3.0.x" />
   <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" />
@@ -361,6 +368,8 @@
   <project path="tools/motodev" name="platform/tools/motodev" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/google" name="androidarmv6/android_vendor_google" />
+  <project path="vendor/samsung" name="androidarmv6/android_vendor_samsung" />
+  <project path="vendor/lge"name="androidarmv6/android_vendor_lge" />
   <project path="vendor/qcom/opensource/v8" name="CyanogenMod/android_vendor_qcom_opensource_v8" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
