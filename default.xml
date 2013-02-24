@@ -40,6 +40,7 @@
   <project path="device/ldpi-common" name="androidarmv6/android_device_ldpi-common" />
   <project path="device/qcom/msm7x27" name="androidarmv6/android_device_qcom_msm7x27" />
   <project path="device/samsung/gio" name="PAC-man/android_device_samsung_gio" />
+  <project path="device/samsung/cooper" name="PAC-man/android_device_samsung_cooper" />
   <project path="device/lge/p500" name="PAC-man/android_device_lge_p500" />
   <project path="device/samsung/msm7x27-common" name="PAC-man/android_device_samsung_msm7x27-common" />
   <project path="device/lge/msm7x27-common" name="PAC-man/android_device_lge_msm7x27-common" />
