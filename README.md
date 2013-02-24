@@ -22,12 +22,12 @@ To build the rom rom for one of the above given devices, run in terminal:
 
 	Building for P500
 		
-		. build-pac.sh pac_p500
+		. build-pac.sh p500
 		
 	Building for Gio
 	 
-		. build-pac.sh pac_gio
+		. build-pac.sh gio
 		
 	Building for Cooper
 	
-		. build-pac.sh pac_cooper
+		. build-pac.sh cooper
