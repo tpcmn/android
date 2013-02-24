@@ -367,6 +367,8 @@
   <project path="vendor/google" name="androidarmv6/android_vendor_google" />
   <project path="vendor/samsung" name="androidarmv6/android_vendor_samsung" />
   <project path="vendor/lge" name="TheJBC/android_vendor_lge" revision="tc" remote="github" />
+  <project path="vendor/qcom/msm7x27" name="androidarmv6/android_vendor_qcom_msm7x27" />
+    
   <project path="device/lge/thunderc" name="TheJBC/android_device_lge_thunderc" revision="tc" remote="github" />
   <project path="device/lge/msm7x27-common" name="TheJBC/android_device_lge_msm7x27-common" revision="tc" remote="github" />
   <project path="device/qcom/msm7x27" name="TheJBC/android_device_qcom_msm7x27" revision="tc" remote="github" />
