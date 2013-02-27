@@ -369,9 +369,9 @@
   <project path="vendor/lge" name="TheJBC/android_vendor_lge" revision="tc" remote="github" />
   <project path="vendor/qcom/msm7x27" name="androidarmv6/android_vendor_qcom_msm7x27" />
     
-  <project path="device/lge/thunderc" name="TheJBC/android_device_lge_thunderc" revision="tc" remote="github" />
-  <project path="device/lge/msm7x27-common" name="TheJBC/android_device_lge_msm7x27-common" revision="tc" remote="github" />
-  <project path="device/qcom/msm7x27" name="TheJBC/android_device_qcom_msm7x27" revision="tc" remote="github" />
+  <project path="device/lge/thunderc" name="tpcmn/android_device_lge_thunderc" revision="tc10.1" remote="github" />
+  <project path="device/lge/msm7x27-common" name="tpcm/android_device_lge_msm7x27-common" revision="tc10.1" remote="github" />
+  <project path="device/qcom/msm7x27" name="tpcmn/android_device_qcom_msm7x27" revision="tc10.1" remote="github" />
   
   <project path="vendor/qcom/opensource/v8" name="CyanogenMod/android_vendor_qcom_opensource_v8" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
@@ -388,7 +388,7 @@
   <project path="vendor/tmobile" name="ParanoidAndroid/android_vendor_tmobile" revision="jellybean" />
 
   <!-- PAC -->
-  <project path="android" name="PAC-man/android" revision="cm-10.1-legacy" />
+  <project path="android" name="tpcmn/android" revision="cm-10.1-legacy" />
   <project path="frameworks/base" name="PAC-man/android_frameworks_base" />
   <project path="packages/apps/Contacts" name="PAC-man/android_packages_apps_Contacts" />
   <project path="packages/apps/Phone" name="PAC-man/android_packages_apps_Phone" />
@@ -397,7 +397,7 @@
   <project path="packages/apps/Trebuchet" name="PAC-man/android_packages_apps_Trebuchet" />
   <project path="packages/providers/ContactsProvider" name="PAC-man/android_packages_providers_ContactsProvider" />
   <project path="system/core" name="PAC-man/android_system_core" />
-  <project path="vendor/pac" name="PAC-man/android_vendor_pac" />
+  <project path="vendor/pac" name="tpcmn/android_vendor_pac" />
 
   <project path="pac" name="PAC-man/pac" >
     <copyfile dest="build-pac.sh" src="build.sh"/>
