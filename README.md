@@ -6,7 +6,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the PAC-man armv6 trees, use this command:
 
-    repo init -u git://github.com/PAC-man/android.git -b cm-10.1-legacy
+    repo init -u git://github.com/tpcmn/android.git -b cm-10.1-legacy
 
 Then to sync up:
 
@@ -24,9 +24,9 @@ To build the rom rom for one of the above given devices, run in terminal:
 		
 		. build-pac.sh p500
 		
-	Building for Gio
+	Building for thunderc
 	 
-		. build-pac.sh gio
+		./build-pac.sh thunderc
 		
 	Building for Cooper
 	
