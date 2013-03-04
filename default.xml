@@ -16,7 +16,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="TheJBC/android_build" revision="10.1" remote="github" >
+  <project path="build" name="TheJBC/android_build" revision="tc10.1" remote="github" >
      <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -361,16 +361,14 @@
   <project path="system/media" name="CyanogenMod/android_system_media" />
   <project path="system/netd" name="androidarmv6/android_system_netd" />
   <project path="system/security" name="CyanogenMod/android_system_security" />
-
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
   <project path="tools/build" name="platform/tools/build" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="tools/motodev" name="platform/tools/motodev" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
-  <project path="vendor/cm" name="tpcm/android_vendor_cm" revision="cm-10.1" remote="github" />
+  <project path="vendor/cm" name="tpcmn/android_vendor_cm" revision="cm-10.1" remote="github" />
   <project path="vendor/google" name="androidarmv6/android_vendor_google" />
   <project path="vendor/samsung" name="androidarmv6/android_vendor_samsung" />
-  <project path="vendor/lge" name="TheJBC/android_vendor_lge" revision="tc" remote="github" />
+  <project path="vendor/lge" name="/android_vendor_lge" revision="tc" remote="github" />
   <project path="vendor/qcom/msm7x27" name="androidarmv6/android_vendor_qcom_msm7x27" />
-
    <project path="device/lge/thunderc" name="tpcmn/android_device_lge_thunderc" revision="tc10.1" remote="github" />
   <project path="device/lge/msm7x27-common" name="tpcm/android_device_lge_msm7x27-common" revision="tc10.1" remote="github" />
   <project path="device/qcom/msm7x27" name="tpcmn/android_device_qcom_msm7x27" revision="tc10.1" remote="github" />
@@ -395,7 +393,7 @@
   <project path="packages/apps/Contacts" name="PAC-man/android_packages_apps_Contacts" />
   <project path="packages/apps/Phone" name="PAC-man/android_packages_apps_Phone" />
   <project path="packages/apps/ROMControl" name="PAC-man/packages_apps_ROMControl" />
-  <project path="packages/apps/Settings" name="PAC-man/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="tpcmn/android_packages_apps_Settings" />
   <project path="packages/apps/Trebuchet" name="PAC-man/android_packages_apps_Trebuchet" />
   <project path="packages/providers/ContactsProvider" name="PAC-man/android_packages_providers_ContactsProvider" />
   <project path="system/core" name="PAC-man/android_system_core" />
