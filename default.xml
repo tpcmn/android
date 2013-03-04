@@ -365,7 +365,7 @@
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
   <project path="tools/build" name="platform/tools/build" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="tools/motodev" name="platform/tools/motodev" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
-  <project path="vendor/cm" name="TheJBC/android_vendor_cm" revision="cm-10.1" remote="github" />
+  <project path="vendor/cm" name="tpcm/android_vendor_cm" revision="cm-10.1" remote="github" />
   <project path="vendor/google" name="androidarmv6/android_vendor_google" />
   <project path="vendor/samsung" name="androidarmv6/android_vendor_samsung" />
   <project path="vendor/lge" name="TheJBC/android_vendor_lge" revision="tc" remote="github" />
