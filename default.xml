@@ -365,7 +365,7 @@
   <project path="system/bluetooth" name="androidmeda/android_system_bluetooth" /> 
   <project path="system/extras" name="CyanogenMod/android_system_extras" />
   <project path="system/media" name="CyanogenMod/android_system_media" />
-  <project path="system/netd" name="androidarmv6/android_system_netd" />
+
   <project path="system/security" name="CyanogenMod/android_system_security" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
   <project path="tools/build" name="platform/tools/build" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
@@ -388,6 +388,7 @@
   <project path="packages/apps/Camera" name="androidarmv6/android_packages_apps_Camera" />
     <project path="packages/apps/Settings" name="tpcmn/android_packages_apps_Settings" />
   <project path="packages/inputmethods/LatinIME" name="androidarmv6/android_packages_inputmethods_LatinIME" />
+    <project path="system/netd" name="tpcmn/android_system_netd" revision="tc10.1" remote="github" />
   <project path="vendor/google" name="androidarmv6/android_vendor_google" />
   <project path="vendor/samsung" name="androidarmv6/android_vendor_samsung" />
   <project path="vendor/lge" name="TheJBC/android_vendor_lge" revision="tc" remote="github" />
