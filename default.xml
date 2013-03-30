@@ -410,7 +410,7 @@
   <!-- PAC -->
 
   <project path="frameworks/base" name="PAC-man/android_frameworks_base" />
-  <project path="frameworks/native" name="androidarmv6/android_frameworks_native" />
+  <project path="frameworks/native" name="tpcmn/android_frameworks_native" />
   <project path="packages/apps/Contacts" name="PAC-man/android_packages_apps_Contacts" />
   <project path="packages/apps/Phone" name="PAC-man/android_packages_apps_Phone" />
   <project path="packages/apps/ROMControl" name="PAC-man/packages_apps_ROMControl" />
