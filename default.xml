@@ -10,6 +10,12 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
+		   
+  <remote  name="tpm"
+           fetch="https://github.com/tpcmn" />
+
+  <remote  name="a6"
+           fetch="https://github.com/androidarmv6" />		   
 
   <!-- Generic github remote -->
   <remote  name="github"
@@ -35,10 +41,10 @@
 
   <!-- CM -->
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" remote="cm" />
-  <project path="bionic" name="android_bionic" groups="pdk" remote="cm" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="a6" />
   <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="cm" />
-  <project path="dalvik" name="android_dalvik" remote="cm" />
+  <project path="dalvik" name="android_dalvik" remote="a6" />
   <project path="development" name="android_development" remote="cm" />
   <project path="device/common" name="android_device_common" remote="cm" />
   <project path="device/generic/armv7-a-neon" name="android_device_generic_armv7-a-neon" groups="pdk" remote="cm" />
@@ -134,7 +140,7 @@
   <project path="external/libgsm" name="android_external_libgsm" groups="pdk" remote="cm" />
   <project path="external/liblzf" name="android_external_liblzf" groups="pdk" remote="cm" />
   <project path="external/libmtp" name="android_external_libmtp" remote="cm" />
-  <project path="external/libncurses" name="android_external_libncurses" remote="cm" />
+  <project path="external/libncurses" name="android_external_libncurses" remote="a6" />
   <project path="external/libnfc-nci" name="android_external_libnfc-nci" groups="pdk" remote="cm" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" groups="nxp_nfc" remote="cm" />
   <project path="external/libnl-headers" name="android_external_libnl-headers" groups="pdk" remote="cm" />
@@ -154,7 +160,7 @@
   <project path="external/libyuv" name="android_external_libyuv" groups="libyuv" remote="cm" />
   <project path="external/linux-tools-perf" name="android_external_linux-tools-perf" remote="cm" />
   <project path="external/littlemock" name="android_external_littlemock" remote="cm" />
-  <project path="external/llvm" name="android_external_llvm" groups="pdk" remote="cm" />
+  <project path="external/llvm" name="android_external_llvm" groups="pdk" remote="a6" />
   <project path="external/lsof" name="android_external_lsof" remote="cm" />
   <project path="external/lzo" name="android_external_lzo" remote="cm" />
   <project path="external/markdown" name="android_external_markdown" remote="cm" />
@@ -218,14 +224,14 @@
   <project path="external/webkit" name="android_external_webkit" remote="cm" />
   <project path="external/webp" name="android_external_webp" remote="cm" />
   <project path="external/webrtc" name="android_external_webrtc" groups="pdk" remote="cm" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="cm" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="a6" />
   <project path="external/wpa_supplicant_8_ti" name="android_external_wpa_supplicant_8_ti" groups="pdk" remote="cm" />
   <project path="external/xmlwriter" name="android_external_xmlwriter" remote="cm" />
   <project path="external/xmp_toolkit" name="android_external_xmp_toolkit" remote="cm" />
   <project path="external/yaffs2" name="android_external_yaffs2" groups="pdk" remote="cm" />
   <project path="external/zlib" name="android_external_zlib" groups="pdk" remote="cm" />
   <project path="external/zxing" name="android_external_zxing" remote="cm" />
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="cm" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="a6" />
   <project path="frameworks/compile/libbcc" name="android_frameworks_compile_libbcc" groups="pdk" remote="cm" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" groups="pdk" remote="cm" />
   <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" groups="pdk" remote="cm" />
@@ -259,19 +265,21 @@
   <project path="hardware/cm" name="android_hardware_cm" remote="cm" />
   <project path="hardware/invensense" name="android_hardware_invensense" groups="invensense" remote="cm" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="cm" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="cm" />
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cm" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="a6" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="a6" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom" remote="cm" />
   <project path="hardware/qcom/audio-bfam" name="android_hardware_qcom_audio-bfam" groups="qcom" remote="cm" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" groups="qcom" remote="cm" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="cm" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="qcom" remote="cm" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" groups="qcom" remote="cm" />
-  <project path="hardware/qcom/display-mdss" name="android_hardware_qcom_display-mdss" groups="qcom" remote="cm" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom" remote="cm" />
+  <project path="hardware/qcom/display-mdss" name="android_hardware_qcom_display-mdss" groups="qcom" remote="cm" />+
+  <project path="hardware/qcom/display-legacy" name="androidarmv6/android_hardware_qcom_display-legacy" groups="qcom" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom" remote="a6" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="cm" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom" remote="cm" />
   <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" groups="qcom" remote="cm" />
+  <project path="hardware/qcom/media_legacy" name="androidarmv6/android_hardware_qcom_media_legacy" />
   <project path="hardware/qcom/media-v4l2" name="android_hardware_qcom_media-v4l2" groups="qcom" remote="cm" />
   <project path="hardware/qcom/msm8960" name="android_hardware_qcom_msm8960" groups="qcom_msm8960" remote="cm" />
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" />
@@ -299,6 +307,7 @@
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="cm" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="cm" />
   <project path="packages/apps/HTMLViewer" name="android_packages_apps_HTMLViewer" remote="cm" />
+  <project path="packages/apps/HwaSettings" name="androidarmv6/android_packages_apps_HwaSettings" />
   <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" remote="cm" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="cm" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cm" />
@@ -333,14 +342,14 @@
   <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" remote="cm" />
   <project path="prebuilt" name="android_prebuilt" remote="cm" />
   <project path="sdk" name="android_sdk" remote="cm" />
-  <project path="system/bluetooth" name="android_system_bluetooth" groups="pdk" remote="cm" />
+  <project path="system/bluetooth" name="android_system_bluetooth" groups="pdk" remote="a6" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="cm" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="cm" />
-  <project path="system/netd" name="android_system_netd" groups="pdk" remote="cm" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="a6" />
   <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="cm" />
   <project path="system/security" name="android_system_security" groups="pdk" remote="cm" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cm" />
-  <project path="vendor/cm" name="android_vendor_cm" remote="cm" />
+  <project path="vendor/cm" name="android_vendor_cm" remote="tpm" />
   <project path="vendor/qcom/opensource/v8" name="android_vendor_qcom_opensource_v8" remote="cm" />
 
   <!-- AOSP -->
@@ -409,12 +418,12 @@
   <project path="vendor/pa" name="android_vendor_pa" remote="pa" revision="jb43" />
 
   <!-- PAC -->
-  <project path="build" name="android_build" groups="pdk" remote="pac" >
+  <project path="build" name="android_build" groups="pdk" remote="tpm" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="android" remote="pac" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="pac" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="pac" />
+  <project path="android" name="android" remote="tpm" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="tpm" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="tpm" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="pac" />
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="pac" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="pac" />
@@ -428,16 +437,24 @@
   <project path="packages/apps/PacStats" name="android_packages_apps_PacStats" remote="pac" />
   <project path="packages/apps/Phone" name="android_packages_apps_Phone" remote="pac" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pac" />
-  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="pac" />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="pac" />
+  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="a6" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="a6" />
   <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="pac" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="pac" />
-  <project path="vendor/pac" name="android_vendor_pac" remote="pac" >
+  <project path="vendor/pac" name="android_vendor_pac" remote="tpm" >
     <copyfile src="tools/build-pac.sh" dest="build-pac.sh" />
   </project>
 
   <!-- Device extras: legacy support -->
   <project path="hardware/qcom/display-legacy" name="androidarmv6/android_hardware_qcom_display-legacy" revision="cm-10.2" />
   <project path="hardware/qcom/media-legacy" name="androidarmv6/android_hardware_qcom_media_legacy" revision="cm-10.2" />
+  <project path="device/mdpi-common" name="androidarmv6/android_device_mdpi-common" />
+  <project path="device/ldpi-common" name="androidarmv6/android_device_ldpi-common" />
+  <project path="vendor/lge" name="TheJBC/android_vendor_lge" revision="tc" remote="github" />
+  <project path="vendor/qcom/msm7x27" name="androidarmv6/android_vendor_qcom_msm7x27" />
+  <project path="device/lge/thunderc" name="tpcmn/android_device_lge_thunderc"  remote="github" />
+  <project path="device/lge/msm7x27-common" name="tpcmn/android_device_lge_msm7x27-common" remote="github" />
+  <project path="device/qcom/msm7x27" name="tpcmn/android_device_qcom_msm7x27"  remote="github" />
+  <project path="vendor/google" name="androidarmv6/android_vendor_google" />  
 
 </manifest>
